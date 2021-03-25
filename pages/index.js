@@ -2,14 +2,22 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const initGist = () => {
+    // Access Gist identify call
+    window.gist.identify('murali@gmail.com');
+  };
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <script type="text/javascript" src="/static/gist.js"></script>
       </Head>
 
       <main className={styles.main}>
+        <button className={styles.gistBtn} onClick={() => initGist()} >Gist identify call</button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
