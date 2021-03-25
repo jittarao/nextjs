@@ -120,3 +120,12 @@
     flex-direction: column;
   }
 }
+.gistBtn {
+  background: #408bee;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: none;
+  border: 1px solid #408cef;
+  color: white;
+  cursor: pointer;
+}
